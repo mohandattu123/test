@@ -1,0 +1,164 @@
+steps:
+  STG_SAMPLE_TABLE_1-81:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      dependencies: []
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: 1
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 886
+              stepCounter: 81
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 877
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 887
+              stepCounter: 81
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: ISO_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 878
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 888
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_VACCINATIONS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 879
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 889
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PEOPLE_VACCINATED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 880
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 890
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PEOPLE_FULLY_VACCINATED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 881
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 891
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DAILY_VACCINATIONS_RAW
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 882
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 892
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DAILY_VACCINATIONS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 883
+                    stepCounter: "80"
+                transform: '"SAMPLE_TABLE_1"."DAILY_VACCINATIONS" /10'
+          - columnReference:
+              columnCounter: 893
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_VACCINATIONS_PER_HUNDRED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 884
+                    stepCounter: "80"
+                transform: ""
+          - columnReference:
+              columnCounter: 894
+              stepCounter: 81
+            dataType: NUMBER(10,5)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PEOPLE_VACCINATED_PER_HUNDRED
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 885
+                    stepCounter: "80"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: SAMPLE_TABLE_1
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'SAMPLE_TABLE_1') }} "SAMPLE_TABLE_1"
+            name: STG_SAMPLE_TABLE_1
+            noLinkRefs: []
+      name: STG_SAMPLE_TABLE_1
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: "81"

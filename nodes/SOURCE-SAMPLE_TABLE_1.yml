@@ -1,5 +1,5 @@
 steps:
-  CUSTOMERS-30:
+  SAMPLE_TABLE_1-80:
     operation:
       database: ""
       dataset: ""
@@ -12,130 +12,10 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 194
-              stepCounter: 30
+              columnCounter: 877
+              stepCounter: 80
             config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: CUSTOMERID
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 195
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: COMPANYNAME
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 196
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: CONTACTNAME
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 197
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: CONTACTTITLE
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 198
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: ADDRESS
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 199
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: CITY
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 200
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: REGION
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 201
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
-            defaultValue: ""
-            description: ""
-            name: POSTALCODE
-            nullable: true
-            primaryKey: false
-            uniqueKey: false
-          - acceptedValues:
-              strictMatch: true
-              values: []
-            appliedColumnTests: {}
-            columnReference:
-              columnCounter: 202
-              stepCounter: 30
-            config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            dataType: VARCHAR(20)
             defaultValue: ""
             description: ""
             name: COUNTRY
@@ -147,13 +27,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 203
-              stepCounter: 30
+              columnCounter: 878
+              stepCounter: 80
             config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            dataType: VARCHAR(20)
             defaultValue: ""
             description: ""
-            name: PHONE
+            name: ISO_CODE
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -162,21 +42,111 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 204
-              stepCounter: 30
+              columnCounter: 879
+              stepCounter: 80
             config: {}
-            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            dataType: NUMBER(10,5)
             defaultValue: ""
             description: ""
-            name: FAX
+            name: TOTAL_VACCINATIONS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 880
+              stepCounter: 80
+            config: {}
+            dataType: NUMBER(10,5)
+            defaultValue: ""
+            description: ""
+            name: PEOPLE_VACCINATED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 881
+              stepCounter: 80
+            config: {}
+            dataType: NUMBER(10,5)
+            defaultValue: ""
+            description: ""
+            name: PEOPLE_FULLY_VACCINATED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 882
+              stepCounter: 80
+            config: {}
+            dataType: NUMBER(10,5)
+            defaultValue: ""
+            description: ""
+            name: DAILY_VACCINATIONS_RAW
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 883
+              stepCounter: 80
+            config: {}
+            dataType: NUMBER(10,5)
+            defaultValue: ""
+            description: ""
+            name: DAILY_VACCINATIONS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 884
+              stepCounter: 80
+            config: {}
+            dataType: NUMBER(10,5)
+            defaultValue: ""
+            description: ""
+            name: TOTAL_VACCINATIONS_PER_HUNDRED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 885
+              stepCounter: 80
+            config: {}
+            dataType: NUMBER(10,5)
+            defaultValue: ""
+            description: ""
+            name: PEOPLE_VACCINATED_PER_HUNDRED
             nullable: true
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SOURCE', 'CUSTOMERS') }}
-      name: CUSTOMERS
+          joinCondition: FROM {{ ref('SOURCE', 'SAMPLE_TABLE_1') }}
+      name: SAMPLE_TABLE_1
       schema: ""
       sqlType: Source
-      table: CUSTOMERS
+      table: SAMPLE_TABLE_1
       type: sourceInput
-    stepCounter: "30"
+    stepCounter: "80"

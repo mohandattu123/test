@@ -9,15 +9,15 @@ environments:
     id: 1
     mappings:
       "1":
-        database: POLARSLED_BLUE
+        database: POLARGOVERN_TEST
         id: 1
         locationName: SOURCE
-        schema: SS
+        schema: SMARTDQ_SCHEMA
       "5":
-        database: POLARSLED_BLUE
+        database: POLARGOVERN_TEST
         id: 5
         locationName: TARGET
-        schema: TEST
+        schema: SMARTDQ_SCHEMA
     name: DEV
 jobs:
   Job-2:
