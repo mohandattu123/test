@@ -1,0 +1,298 @@
+steps:
+  DIM_EMPLOYEES-45:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: 1
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 326
+              stepCounter: 45
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: DIM_EMPLOYEES_KEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 327
+              stepCounter: 45
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPLOYEEID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 205
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 328
+              stepCounter: 45
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: LASTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 206
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 329
+              stepCounter: 45
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: FIRSTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 207
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 330
+              stepCounter: 45
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: TITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 208
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 332
+              stepCounter: 45
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: BIRTHDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 210
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 333
+              stepCounter: 45
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: HIREDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 211
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 335
+              stepCounter: 45
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 213
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 336
+              stepCounter: 45
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: REGION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 214
+                    stepCounter: "31"
+                transform: ""
+          - columnReference:
+              columnCounter: 338
+              stepCounter: 45
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 216
+                    stepCounter: "31"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 344
+              stepCounter: 45
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 345
+              stepCounter: 45
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 346
+              stepCounter: 45
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 347
+              stepCounter: 45
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 348
+              stepCounter: 45
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 349
+              stepCounter: 45
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              EMPLOYEES: "31"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: EMPLOYEES
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'EMPLOYEES') }} "EMPLOYEES"
+            name: DIM_EMPLOYEES
+            noLinkRefs: []
+      name: DIM_EMPLOYEES
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: "45"

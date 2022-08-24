@@ -1,0 +1,492 @@
+steps:
+  FCT_CATEGORIES_PRODUCTS_SUPPLIERS-62:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: 1
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 645
+              stepCounter: 62
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: DIM_CATEGORIES_PRODUCTS_SUPPLIERS_KEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 367
+                    stepCounter: "47"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 668
+              stepCounter: 62
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ORD_PROD_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0
+                    stepCounter: "0"
+                transform: CONCAT("ORDER_DETAILS"."ORDERID",
+                  "DIM_CATEGORIES_PRODUCTS_SUPPLIERS"."PRODUCTID")
+            systemColumnType: None
+            transform: ""
+          - columnReference:
+              columnCounter: 646
+              stepCounter: 62
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CATEGORYID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 368
+                    stepCounter: "47"
+                transform: ""
+          - columnReference:
+              columnCounter: 648
+              stepCounter: 62
+            dataType: NUMBER(10,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 371
+                    stepCounter: "47"
+                transform: ""
+          - columnReference:
+              columnCounter: 651
+              stepCounter: 62
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: UNITPRICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 240
+                    stepCounter: "34"
+                transform: ""
+          - columnReference:
+              columnCounter: 653
+              stepCounter: 62
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SUPPLIERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 381
+                    stepCounter: "47"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 666
+              stepCounter: 62
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 667
+              stepCounter: 62
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 669
+              stepCounter: 62
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: ORDERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 224
+                    stepCounter: "33"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 670
+              stepCounter: 62
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: CUSTOMERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 306
+                    stepCounter: "43"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 671
+              stepCounter: 62
+            config: {}
+            dataType: NUMBER(5,0)
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: UNITSINSTOCK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 377
+                    stepCounter: "47"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 672
+              stepCounter: 62
+            config: {}
+            dataType: NUMBER(10,0)
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: SHIPVIA
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 230
+                    stepCounter: "33"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 673
+              stepCounter: 62
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: FREIGHT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 231
+                    stepCounter: "33"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 674
+              stepCounter: 62
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: SHIPCITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 234
+                    stepCounter: "33"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 675
+              stepCounter: 62
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: SHIPCOUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 237
+                    stepCounter: "33"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 676
+              stepCounter: 62
+            config: {}
+            dataType: NUMBER(5,0)
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: QUANTITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 241
+                    stepCounter: "34"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 677
+              stepCounter: 62
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            isBusinessKey: true
+            keyColumnType: None
+            name: DISCOUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 242
+                    stepCounter: "34"
+                transform: ""
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 791
+              stepCounter: "62"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: ORDERDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 499
+                    stepCounter: "52"
+                transform: '"DT_Date_Order"."DATE"::TIMESTAMP'
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 792
+              stepCounter: "62"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: REQUIREDDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 499
+                    stepCounter: "52"
+                transform: '"DT_Date_Require"."DATE"::TIMESTAMP'
+            systemColumnType: None
+            transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 793
+              stepCounter: "62"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: SHIPPEDDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 499
+                    stepCounter: "52"
+                transform: '"DT_Date_Ship"."DATE"::TIMESTAMP'
+            systemColumnType: None
+            transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              DIM_CATEGORIES_PRODUCTS_SUPPLIERS: "47"
+              DIM_CUSTOMERS: "43"
+              DIM_EMPLOYEES: "45"
+              DT_Date_Order: "52"
+              DT_Date_Require: "52"
+              DT_Date_Ship: "52"
+              ORDERS: "33"
+              ORDER_DETAILS: "34"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: ORDERS
+              - locationName: SOURCE
+                nodeName: ORDER_DETAILS
+              - locationName: SOURCE
+                nodeName: DIM_CUSTOMERS
+              - locationName: SOURCE
+                nodeName: DIM_EMPLOYEES
+              - locationName: SOURCE
+                nodeName: DIM_CATEGORIES_PRODUCTS_SUPPLIERS
+              - locationName: SOURCE
+                nodeName: DT_Date
+            join:
+              joinCondition: "FROM {{ ref('SOURCE', 'ORDERS') }} \"ORDERS\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'ORDER_DETAILS') }}
+                \"ORDER_DETAILS\"\r
+
+                ON \"ORDERS\".\"ORDERID\" =
+                \"ORDER_DETAILS\".\"ORDERID\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'DIM_CUSTOMERS') }}
+                \"DIM_CUSTOMERS\"\r
+
+                ON \"ORDERS\".\"CUSTOMERID\" =
+                \"DIM_CUSTOMERS\".\"CUSTOMERID\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'DIM_EMPLOYEES') }}
+                \"DIM_EMPLOYEES\"\r
+
+                ON \"ORDERS\".\"EMPLOYEEID\" =
+                \"DIM_EMPLOYEES\".\"EMPLOYEEID\"\r
+
+                INNER JOIN {{ ref('SOURCE',
+                'DIM_CATEGORIES_PRODUCTS_SUPPLIERS') }}
+                \"DIM_CATEGORIES_PRODUCTS_SUPPLIERS\"\r
+
+                ON \"ORDER_DETAILS\".\"PRODUCTID\" =
+                \"DIM_CATEGORIES_PRODUCTS_SUPPLIERS\".\"PRODUCTID\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'DT_Date') }}
+                \"DT_Date_Order\"\r
+
+                ON \"ORDERS\".\"ORDERDATE\" =
+                \"DT_Date_Order\".\"DATE\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'DT_Date') }}
+                \"DT_Date_Require\"\r
+
+                ON \"ORDERS\".\"REQUIREDDATE\" =
+                \"DT_Date_Require\".\"DATE\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'DT_Date') }}
+                \"DT_Date_Ship\"\r
+
+                ON \"ORDERS\".\"SHIPPEDDATE\" =
+                \"DT_Date_Ship\".\"DATE\""
+            name: FCT_CATEGORIES_PRODUCTS_SUPPLIERS
+            noLinkRefs: []
+      name: FCT_CATEGORIES_PRODUCTS_SUPPLIERS
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: "62"

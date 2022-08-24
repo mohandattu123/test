@@ -1,0 +1,394 @@
+steps:
+  DIM_CATEGORIES_PRODUCTS_SUPPLIERS-47:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: 1
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests:
+          - continueOnFailure: true
+            description: ""
+            name: Test
+            runOrder: After
+            templateString: ""
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 367
+              stepCounter: 47
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: DIM_CATEGORIES_PRODUCTS_SUPPLIERS_KEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 368
+              stepCounter: 47
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CATEGORYID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 191
+                    stepCounter: "29"
+                transform: ""
+          - columnReference:
+              columnCounter: 369
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CATEGORYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 192
+                    stepCounter: "29"
+                transform: ""
+          - columnReference:
+              columnCounter: 371
+              stepCounter: 47
+            dataType: NUMBER(10,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: PRODUCTID
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 243
+                    stepCounter: "35"
+                transform: ""
+          - columnReference:
+              columnCounter: 372
+              stepCounter: 47
+            dataType: VARCHAR(40) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PRODUCTNAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 244
+                    stepCounter: "35"
+                transform: ""
+          - columnReference:
+              columnCounter: 375
+              stepCounter: 47
+            dataType: VARCHAR(20) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: QUANTITYPERUNIT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 247
+                    stepCounter: "35"
+                transform: ""
+          - columnReference:
+              columnCounter: 376
+              stepCounter: 47
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: UNITPRICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 248
+                    stepCounter: "35"
+                transform: ""
+          - columnReference:
+              columnCounter: 377
+              stepCounter: 47
+            dataType: NUMBER(5,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: UNITSINSTOCK
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 249
+                    stepCounter: "35"
+                transform: ""
+          - columnReference:
+              columnCounter: 381
+              stepCounter: 47
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SUPPLIERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 258
+                    stepCounter: "38"
+                transform: ""
+          - columnReference:
+              columnCounter: 382
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: COMPANYNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 259
+                    stepCounter: "38"
+                transform: ""
+          - columnReference:
+              columnCounter: 383
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CONTACTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 260
+                    stepCounter: "38"
+                transform: ""
+          - columnReference:
+              columnCounter: 384
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: CONTACTTITLE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 261
+                    stepCounter: "38"
+                transform: ""
+          - columnReference:
+              columnCounter: 386
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SUPPLIERCITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 263
+                    stepCounter: "38"
+                transform: ""
+          - columnReference:
+              columnCounter: 387
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SUPPLIERREGION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 264
+                    stepCounter: "38"
+                transform: ""
+          - columnReference:
+              columnCounter: 389
+              stepCounter: 47
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: SUPPLIERCOUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 266
+                    stepCounter: "38"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 393
+              stepCounter: 47
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 394
+              stepCounter: 47
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 395
+              stepCounter: 47
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 396
+              stepCounter: 47
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 397
+              stepCounter: 47
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 398
+              stepCounter: 47
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases:
+              CATEGORIES: "29"
+              PRODUCTS: "35"
+              SUPPLIERS: "38"
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: CATEGORIES
+              - locationName: SOURCE
+                nodeName: PRODUCTS
+              - locationName: SOURCE
+                nodeName: SUPPLIERS
+            join:
+              joinCondition: "FROM {{ ref('SOURCE', 'CATEGORIES') }} \"CATEGORIES\" \r
+
+                INNER JOIN {{ ref('SOURCE', 'PRODUCTS') }}
+                \"PRODUCTS\"\r
+
+                ON \"CATEGORIES\".\"CATEGORYID\" =
+                \"PRODUCTS\".\"CATEGORYID\"\r
+
+                INNER JOIN {{ ref('SOURCE', 'SUPPLIERS') }}
+                \"SUPPLIERS\"\r
+
+                ON \"PRODUCTS\".\"SUPPLIERID\"=
+                \"SUPPLIERS\".\"SUPPLIERID\""
+            name: DIM_CATEGORIES_PRODUCTS_SUPPLIERS
+            noLinkRefs: []
+      name: DIM_CATEGORIES_PRODUCTS_SUPPLIERS
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: "47"

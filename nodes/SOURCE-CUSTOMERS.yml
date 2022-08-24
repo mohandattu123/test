@@ -1,0 +1,182 @@
+steps:
+  CUSTOMERS-30:
+    operation:
+      database: ""
+      dataset: ""
+      locationID: 1
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 194
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 195
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: COMPANYNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 196
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: CONTACTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 197
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: CONTACTTITLE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 198
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: ADDRESS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 199
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 200
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: REGION
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 201
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: POSTALCODE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 202
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: COUNTRY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 203
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: PHONE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 204
+              stepCounter: 30
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: FAX
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'CUSTOMERS') }}
+      name: CUSTOMERS
+      schema: ""
+      sqlType: Source
+      table: CUSTOMERS
+      type: sourceInput
+    stepCounter: "30"

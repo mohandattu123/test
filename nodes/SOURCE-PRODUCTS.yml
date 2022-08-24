@@ -1,0 +1,167 @@
+steps:
+  PRODUCTS-35:
+    operation:
+      database: ""
+      dataset: ""
+      locationID: 1
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 243
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(10,0)
+            defaultValue: ""
+            description: ""
+            name: PRODUCTID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 244
+              stepCounter: 35
+            config: {}
+            dataType: VARCHAR(40) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: PRODUCTNAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 245
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(10,0)
+            defaultValue: ""
+            description: ""
+            name: SUPPLIERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 246
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(10,0)
+            defaultValue: ""
+            description: ""
+            name: CATEGORYID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 247
+              stepCounter: 35
+            config: {}
+            dataType: VARCHAR(20) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: QUANTITYPERUNIT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 248
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: UNITPRICE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 249
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(5,0)
+            defaultValue: ""
+            description: ""
+            name: UNITSINSTOCK
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 250
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(5,0)
+            defaultValue: ""
+            description: ""
+            name: UNITSONORDER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 251
+              stepCounter: 35
+            config: {}
+            dataType: NUMBER(5,0)
+            defaultValue: ""
+            description: ""
+            name: REORDERLEVEL
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 252
+              stepCounter: 35
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: ""
+            name: DISCONTINUED
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'PRODUCTS') }}
+      name: PRODUCTS
+      schema: ""
+      sqlType: Source
+      table: PRODUCTS
+      type: sourceInput
+    stepCounter: "35"

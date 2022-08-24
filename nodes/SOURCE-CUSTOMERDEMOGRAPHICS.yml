@@ -1,0 +1,47 @@
+steps:
+  CUSTOMERDEMOGRAPHICS-74:
+    operation:
+      database: ""
+      dataset: ""
+      locationID: 1
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 837
+              stepCounter: 74
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERTYPEID
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 838
+              stepCounter: 74
+            config: {}
+            dataType: VARCHAR(16777216) COLLATE 'en-ci'
+            defaultValue: ""
+            description: ""
+            name: CUSTOMERDESC
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'CUSTOMERDEMOGRAPHICS') }}
+      name: CUSTOMERDEMOGRAPHICS
+      schema: ""
+      sqlType: Source
+      table: CUSTOMERDEMOGRAPHICS
+      type: sourceInput
+    stepCounter: "74"
